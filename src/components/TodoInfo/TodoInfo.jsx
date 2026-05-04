@@ -5,6 +5,6 @@ export const TodoInfo = ({ todo }) => (
     className={`TodoInfo ${todo.completed === true && 'TodoInfo--completed'}`}
   >
     <h2 className="TodoInfo__title">{todo.title}</h2>
-    {todo.user !== null && <UserInfo key={todo.userId} user={todo.user} />}
+    {todo.user !== null && <UserInfo user={todo.user} />}
   </article>
 );
